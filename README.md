@@ -8,6 +8,11 @@ This is a fork of [mpbzh](https://github.com/mpbzh)'s [Homebridge Plex](https://
 
 Use the active sessions on your Plex server as a sensor in Homebridge. Enable your cozy cinema light scene when Plex starts playing and go back to your normal lighting when playback stops.
 
+## Requirements
+
+- Node.js 18.15.0 or later
+- Homebridge 1.6.0 or later (compatible with Homebridge v2)
+
 ## Installation
 
 You install the plugin the same way you installed Homebridge - as a global NPM module:

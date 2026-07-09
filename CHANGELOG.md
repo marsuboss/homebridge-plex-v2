@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+# [2.0.0] - 2026-07-09
+### Added
+- Homebridge v2 compatibility
+
+### Changed
+- Replaced the deprecated `.on('get')` characteristic API (removed in HAP-NodeJS v1 / Homebridge v2) with `.onGet()`
+- Replaced the deprecated `request` / `request-promise-native` dependencies with Node.js core `http` / `https` modules (the plugin now has zero runtime dependencies)
+- Requires Node.js 18.15.0 or later and Homebridge 1.6.0 or later
+
+### Fixed
+- The `cert_verification` config option is now read as documented (previously only the undocumented `certVerification` key worked)
+
 # [1.2.1] - 2020-05-26
 ### Changed
 - Homebridge accessory name change
@@ -56,6 +68,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Initial Release
 
 [Unreleased]: https://github.com/iharosi/homebridge-plex-v2/compare/master...develop
+[2.0.0]: https://github.com/iharosi/homebridge-plex-v2/compare/v1.2.2...v2.0.0
 [1.2.1]: https://github.com/iharosi/homebridge-plex-v2/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/iharosi/homebridge-plex-v2/compare/v1.1.7...v1.2.0
 [1.1.7]: https://github.com/iharosi/homebridge-plex-v2/compare/v1.1.6...v1.1.7
